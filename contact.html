@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+  </head>
+  <body>
+    <div id="top">
+      <h1>"Contact Us"</h1>
+      <p>
+        Please complete the information below. Fields marked with
+        <span class="required">*</span> are required fields
+      </p>
+    </div>
+    <div id="data">
+      <form action="mailto:sample@email.com" method="post">
+        <fieldset>
+          <legend>Your Data</legend>
+          <table>
+            <tr>
+              <td>
+                <label for="fname"
+                  >First Name<span class="required">*</span></label
+                >
+              </td>
+              <td><input type="text" id="fname" name="fname" required></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="lname"
+                  >Last Name<span class="required">*</span></label
+                >
+              </td>
+              <td><input type="text" id="lname" name="lname" required></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="saddress"
+                  >Street Address<span class="required">*</span></label
+                >
+              </td>
+              <td>
+                <input type="text" id="saddress" name="saddress" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="city">City<span class="required">*</span></label>
+              </td>
+              <td><input type="text" id="city" name="city" required></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="province"
+                  >Province<span class="required">*</span></label
+                >
+              </td>
+              <td>
+                <select name="province" id="province">
+                  <option value="">--Select--</option>
+                  <option value="AB">AB</option>
+                  <option value="BC">BC</option>
+                  <option value="MB">MB</option>
+                  <option value="NB">NB</option>
+                  <option value="NL">NL</option>
+                  <option value="NS">NS</option>
+                  <option value="NT">NT</option>
+                  <option value="NU">NU</option>
+                  <option value="ON">ON</option>
+                  <option value="PE">PE</option>
+                  <option value="QC">QC</option>
+                  <option value="SK">SK</option>
+                  <option value="YT">YT</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="pcode"
+                  >Postal Code<span class="required">*</span></label
+                >
+              </td>
+              <td><input type="text" id="pcode" name="pcode" required></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email"
+                  >Email Address<span class="required">*</span></label
+                >
+              </td>
+              <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="phone">Phones<span class="required">*</span></label>
+              </td>
+              <td>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{10}"
+                  required
+                ><small> (10 digits only)</small>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Agreement</legend>
+          <label for="agreement">
+            <input
+              type="checkbox"
+              id="agreement"
+              name="agreement"
+              required
+            >Accept Agreement<span class="required">*</span><br>
+          </label>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
